@@ -1,19 +1,17 @@
-priority -50
-
 ##############
 # MATH STUFF #
 ##############
-snippet eq "Equation" b
-\begin{equation}
-	$0
-\end{equation}
-endsnippet
+#snippet eq "Equation" b
+#\begin{equation}
+	#$0
+#\end{equation}
+#endsnippet
 
-snippet eqnn "Equation without number" b
-\begin{equation*}
-	$0
-\end{equation*}
-endsnippet
+#snippet eqnn "Equation without number" b
+#\begin{equation*}
+	#$0
+#\end{equation*}
+#endsnippet
 
 snippet eqa "Equation array" b
 \begin{eqnarray}
@@ -51,6 +49,52 @@ endsnippet
 
 snippet lr[ "left[ right]" w
 \left[ ${1:${VISUAL}} \right]
+endsnippet
+snippet u "underscore" w 
+_{${1}}$0 
+endsnippet
+snippet r "raise" w 
+^{${1}}$0 
+endsnippet
+
+snippet cal "caligraphic" w 
+\mathcal{${1}}$0
+endsnippet
+snippet over "overline" w 
+\overline{${1}}$0 
+endsnippet
+snippet wt "widetilde" w 
+\widetilde{${1}}$0 
+endsnippet
+snippet br "wiggly brackets" w
+\\{${1:}\\}$0
+endsnippet
+
+snippet f "field" w
+\mathbb{${1:}}$0
+endsnippet
+
+snippet bf "text bold font" w
+\textbf{${1:}}$0
+endsnippet
+snippet emph "emphasize" w
+\emph{${1:}}$0
+endsnippet
+snippet . "dots" w
+\ldots $0
+endsnippet
+snippet tex "text" w
+\text{${1:}}$0
+endsnippet
+
+snippet and "and" w
+& $0
+endsnippet
+snippet dual "duality brackets" w
+ \langle $1, $2 \rangle $0
+endsnippet
+snippet xto "xrightarrow" w
+\xrightarrow{$1}$0
 endsnippet
 
 # vim:ft=snippets:
