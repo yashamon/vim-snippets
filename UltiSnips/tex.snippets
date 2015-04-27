@@ -77,12 +77,13 @@ endsnippet
 snippet sec "Section" b
 \section{${1:section name}}
 \label{sec:${2:${1/\\\w+\{(.*?)\}|\\(.)|(\w+)|([^\w\\]+)/(?4:_:\L$1$2$3\E)/ga}}}
-
 ${0}
-
 % section $2 (end)
 endsnippet
 
+snippet secr "Section reference" b
+Section \ref{sec:${1}}${0}
+endsnippet
 
 snippet sub "Subsection" b
 \subsection{${1:subsection name}}
@@ -131,7 +132,7 @@ snippet pac "Package" b
 endsnippet
 
 snippet " "quotes"
-``$1''$0
+\`\`$1''$0
 endsnippet
 
 snippet lp "Long parenthesis" 
