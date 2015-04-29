@@ -157,9 +157,15 @@ snippet label "\\label{}" w
 \label{$1}$0
 endsnippet
 snippet eqnum "equation" 
-\begin{equation} \label{$1}
+\begin{equation} \label{eq:$1}
 $0
 \end{equation}
+endsnippet
+
+snippet proof "proof" 
+\begin{proof} [Proof of \ref{$1}]
+$0
+\end{proof}
 endsnippet
 snippet eq "equation*" 
 \begin{equation*}
