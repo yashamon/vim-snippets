@@ -21,6 +21,14 @@ snippet "b(egin)?" "begin{} / end{}" br
 \end{$1}
 endsnippet
 
+snippet "split" "begin{} / end{}" br
+\begin{equation} \label{eq:$1}
+\begin {split}
+$0
+\end {split}
+\end{equation}
+endsnippet
+
 ####################
 # TABULARS, ARRAYS #
 ####################
