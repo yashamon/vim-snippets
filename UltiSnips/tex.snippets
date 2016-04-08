@@ -8,6 +8,18 @@ snippet ref "\\ref{}" w
 \ref{$1}$0
 endsnippet
 
+
+snippet thmref "thmref" w
+\ref{thm:$1}$0
+endsnippet
+
+snippet lemmaref "thmref" w
+\ref{lemma:$1}$0
+endsnippet
+
+snippet propref "propref" w
+\ref{prop:$1}$0
+endsnippet
 ###########################################################################
 #                            TEXTMATE SNIPPETS                            #
 ###########################################################################
@@ -159,7 +171,7 @@ snippet m "math" w
 \$$1\$$0
 endsnippet
 snippet cite "cite" w
-\cite{${1:}}$0
+\cite{cite${1:}}$0
 endsnippet
 snippet label "\\label{}" w
 \label{$1}$0
@@ -184,7 +196,7 @@ endsnippet
 # & $0
 # endsnippet
 snippet eqref "eqref" 
-\eqref{$1}$0
+\eqref{eq:$1}$0
 endsnippet
 snippet color "color"
 \textcolor{$1}{$2}$0 
@@ -192,23 +204,28 @@ endsnippet
 
 
 snippet lemma "lemma" 
-\begin{lemma} [lemma:\ref{$1}]
+\begin{lemma} \label{lemma:$1}
 $0
 \end{lemma}
 endsnippet
 snippet prop "proposition" 
-\begin{proposition} [proposition:\ref{$1}]
+\begin{proposition} \label{proposition:$1}
 $0
 \end{proposition}
 endsnippet
 snippet thm "theorem" 
-\begin{theorem} [theorem:\ref{$1}]
+\begin{theorem} \label{thm:$1}
 $0
 \end{theorem}
 endsnippet
 
+snippet rmk "remark" 
+\begin{remark} \label{rmk:$1}
+$0
+\end{remark}
+endsnippet
 snippet def "definition" 
-\begin{definition} [definition:\ref{$1}]
+\begin{definition} \label{def:$1}
 $0
 \end{definition}
 endsnippet
